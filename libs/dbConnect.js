@@ -15,7 +15,7 @@ if(!cached) {
 }
 async function dbConnect(){
     // checking if the connection is already established, then return it 
-    if (!cached.conn) {
+    if (cached.conn) {
         return cached.conn;
     }
     if(!cached.promise) {

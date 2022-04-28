@@ -2,6 +2,7 @@ import dbConnect from "../../../libs/dbConnect";
 import Post from "../../../models/post.model";
 
 export default async function handler(req, res) {
+    await dbConnect()
     const { method, body, query } = req;
 
 
